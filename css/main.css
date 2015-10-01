@@ -129,7 +129,7 @@ body{
 		transition: 0.5s;
   		background-size:cover;
   		position:relative;
-  		width:100vh;
+  		height:100vh;
 	}
 	#header_menu_bar{
 		opacity: 1.0;
@@ -138,12 +138,12 @@ body{
 	#name{
 		color: white;
   		padding-bottom: 60px;
-  		font: 20px Sitka;
+  		font: 40px Sitka;
  	}
 	
 	#key_words{
 		color: white;
-  		font: 10px Sitka;
+  		font: 20px Sitka;
  	}
 
 	#footer_link{
