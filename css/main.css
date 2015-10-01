@@ -68,7 +68,7 @@ body{
 #name{
 	color: white;
   	padding-bottom: 60px;
-  	font: 50px Sitka;
+  	font: 3.5em Sitka;
  }
 
  #name_style{
@@ -78,7 +78,7 @@ body{
 
 #key_words{
 	color: white;
-  	font: 30px Sitka;
+  	font: 2em Sitka;
  }
 
 #key_words_style{
@@ -128,7 +128,7 @@ body{
 		background-image: url(../images/header_image_min.jpg);
 		background-size:cover;
   		position:relative;
-  		width: 100%
+  		width: 100%;
 	}
 	#header_menu_bar{
 		opacity: 1.0;
