@@ -129,7 +129,7 @@ body{
 		transition: 0.5s;
   		background-size:cover;
   		position:relative;
-  		height:100vh;
+  		height:100v;
 	}
 	#header_menu_bar{
 		opacity: 1.0;
