@@ -17,7 +17,7 @@ body{
 	-webkit-box-flex: 1;
 }
 #header_image{
-	background-image: url(./images/header_image1.jpg);
+	background-image: url(../images/header_image.jpg);
 	transition: 0.5s;
   	background-size:cover;
   	position:relative;
@@ -121,3 +121,36 @@ body{
 	color: #919496;
 	font: bold 20px Stika;
 }
+
+
+@media screen and (max-width: 1000px){
+	#header_image{
+		background-image: url(../images/header_image_min.jpg);
+		transition: 0.5s;
+  		background-size:cover;
+  		position:relative;
+  		height:100vh;
+	}
+	#header_menu_bar{
+		opacity: 1.0;
+	}
+
+	#name{
+		color: white;
+  		padding-bottom: 60px;
+  		font: 30px Sitka;
+ 	}
+	
+	#key_words{
+		color: white;
+  		font: 20px Sitka;
+ 	}
+
+	#footer_link{
+		text-align: center;
+		font: bold 20px Sitka;
+		padding-top:40px;
+	}
+
+}
+
