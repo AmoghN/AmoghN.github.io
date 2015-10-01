@@ -126,10 +126,9 @@ body{
 @media screen and (max-width: 1000px){
 	#header_image{
 		background-image: url(../images/header_image_min.jpg);
-		transition: 0.5s;
-  		background-size:cover;
+		background-size:cover;
   		position:relative;
-  		height:100v;
+  		width: 100%
 	}
 	#header_menu_bar{
 		opacity: 1.0;
