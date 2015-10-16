@@ -39,6 +39,8 @@ body{
 .profile_image{
 	-webkit-box-flex: 1;
 	padding: 20px;
+	/*height: 68;
+	width: 150;*/
 }
 .custom_link{
 	text-transform: uppercase;
@@ -56,33 +58,37 @@ body{
 	float: left;
 }
 .header_body{
+	display: inline;
 	position:absolute;
   	top:50%;
   	text-align:center;
   	width:100%;
   	-ms-transform: translate(0,-50%);
    	-webkit-transform: translate(0,-50%);
-    transform: translate(0,-50%);  
+    transform: translate(0,-50%); 
+    font-family: Sitka;
 }
 
 #name{
 	color: white;
   	padding-bottom: 60px;
-  	font: 3.5em Sitka;
+  	font-size: 3.4vmax;
  }
 
  #name_style{
- 	background: rgba(0, 0, 0, 0.5);
+ 	display: inline-block;
+ 	background-color: rgba(0, 0, 0, 0.5);
  	padding: 10px;
  }
 
 #key_words{
 	color: white;
-  	font: 2em Sitka;
- }
+	font-size: 2.6vmax;
+}
 
 #key_words_style{
-	background: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px;
 }
 
@@ -98,7 +104,7 @@ body{
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: center;
 	margin: auto;
-	background-color: #D6D6D6;
+	background-color: rgba(214,214,214,1.0);
 }
 
 #footer_logo{
@@ -123,33 +129,38 @@ body{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
 	#header_image{
 		background-image: url(../images/header_image_min.jpg);
-		background-size:cover;
-  		position:relative;
-  		width: 100%;
+		background-position: center center;
 	}
 	#header_menu_bar{
+		max-width: 100%;
 		opacity: 1.0;
+		background: rgba(255, 255, 255, 1.0);
 	}
 
 	#name{
-		color: white;
-  		padding-bottom: 60px;
-  		font: 40px Sitka;
- 	}
-	
-	#key_words{
-		color: white;
-  		font: 20px Sitka;
+		font-size: 25px;
  	}
 
-	#footer_link{
+ 	#key_words{
+		font-size: 20px;
+ 	}
+ 	#footer_logo{
+		padding: 10px;
 		text-align: center;
-		font: bold 20px Sitka;
-		padding-top:40px;
 	}
 
+	#footer_body{
+ 		-webkit-box-orient: vertical;
+ 	} 	
+
+ 	#footer_link{
+		text-align: center;
+		font: bold 16px Sitka;
+		padding: 0px;
+		padding-bottom:20px;
+	}
 }
 
