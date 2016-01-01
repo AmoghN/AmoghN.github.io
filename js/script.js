@@ -2,8 +2,6 @@ function scrollToAnchor(def){
     var location = $(def);
     $('html,body').animate({scrollTop: location.offset().top},'slow');
 }
-
-
 $(document).ready(function () {
 	var navOffset = 0;
 	$(window).scroll(function() {
@@ -13,6 +11,5 @@ $(document).ready(function () {
 		}else{
 			$("nav").removeClass("fixed");
 		}
-	})
-	
+	})	
 })
