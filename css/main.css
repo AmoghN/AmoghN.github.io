@@ -1,3 +1,4 @@
+/* GENERAL */
 *
 {
     margin: 0px;
@@ -9,14 +10,16 @@ header,section,footer,aside,nav,article,hgroup
 }
 body
 {
-    display: center;
     width: 100%;
+    font-family: montserrat;
 }
+/* FONT */
 @font-face
 {
     font-family: "montserrat";
     src: url('../font/Montserrat-Regular.ttf') format('truetype');
 }
+/* NAVBAR */
 .container
 {
     width: 80%;
@@ -56,6 +59,16 @@ body
 {
     text-decoration: underline;
 }
+#activeNavLInk
+{
+    font: 20px montserrat;
+}
+#activeNavLInk:hover
+{
+    color: black;
+    font: bold 20px montserrat;
+    text-decoration: underline;
+}
 .navbar-toggle
 {
     margin: 0px;
@@ -74,13 +87,13 @@ body
     padding-bottom: 10px;
     width: 100%;
 }
+/* HEADER IMAGE AND TEXT */
 #header_image
 {
     background-image: url(../images/header_image.jpg);
     background-size: cover;
-    height: 100%;
-    position: relative;
-    transition: 0.5s;
+    height: 100vh;
+    
 }
 .header_body
 {
@@ -115,10 +128,20 @@ body
     top: 50px;
     width: 60px;
 }
+/* BODY LAYOUT */
 .wrapper_white
 {
-    padding-bottom: 50px;
-    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 100%;
+}
+.wrapper_grey
+{
+    background-color: rgba(214, 214, 214, 1.0);
+    padding-bottom: 25px;
+    padding-top: 25px;
     width: 100%;
 }
 .content_wrapper
@@ -128,79 +151,95 @@ body
 }
 .content
 {
+    padding: 10px;
     margin: auto;
     width: 680px;
 }
-.left_column_pic
+.wide_content
+{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+.left_column_div
 {
     display: inline-block;
 }
 .right_column_words
 {
+    text-align: left;
     display: inline-block;
     float: right;
-    padding: 0px 0px 50px 0px;
     vertical-align: top;
     width: 430px;
 }
-.heading-headline
+.left_column_words
 {
-    font: bold 30px montserrat;
+    text-align: left;
+    display: inline-block;
+    width: 475px;
+}
+.right_column_div
+{
+    float: right;
+
+}
+/* CAROUSEL */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+{
+    margin: auto;
+    padding-bottom: 10px;
+}
+/* IMAGE */
+.img_frame
+{
+    margin-bottom: 10px;
+}
+/* BODY TEXT STYLES */
+.body_heading
+{
+    margin: 0px;
+    font: bold 30px montserrat;    
 }
 .body_text
 {
     font: 20px montserrat;
+    padding: 10px;
 }
 .body_text_center_bold
 {
     font: bold 20px montserrat;
     margin-top: auto;
     text-align: center;
+    padding: 10px;
 }
 .body_text_center
 {
     font: 20px montserrat;
     margin-top: auto;
     text-align: center;
+    padding: 10px;
+}
+.body_description{
+    max-width: 310px;
+    font-size: 15;
+    padding: 10px;
 }
 .link_body
 {
     font: 20px montserrat;
-    text-decoration: none;
+    text-decoration: none;    
 }
 .link_body:hover
 {
     text-decoration: underline;
 }
-.wrapper_grey
+.signature
 {
-    background-color: rgba(214, 214, 214, 1.0);
-    padding-bottom: 25px;
-    padding-top: 25px;
-    width: 100%;
+    font: 10px montserrat;
 }
-.middle_column_words
-{
-    padding: 10px 0px 20px 0px;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img
-{
-    margin: auto;
-    padding-bottom: 20px;
-}
-.left_column_words
-{
-    display: inline-block;
-    margin-top: 10px;
-    width: 475px;
-}
-.right_column_pic
-{
-    display: inline-block;
-    float: right;
-    width: 170px;
-}
+/* FOOTER */
 .footer_style
 {
     background-color: rgba(214, 214, 214, 1.0);
@@ -231,10 +270,7 @@ body
 {
     padding: 5px 10px 0 0;
 }
-.signature
-{
-    font: 10px montserrat;
-}
+/* MEDIA TAGS */
 @media screen and (max-width: 900px)
 {
     .container
@@ -277,10 +313,9 @@ body
     {
         width: 100%;
     }
-    .left_column_pic
+    .left_column_div
     {
         display: block;
-        height: 209px;
         margin: auto;
         text-align: center;
         width: 100%;
@@ -289,29 +324,28 @@ body
     {
         float: none;
         margin: auto;
-        padding: 0px 30px 0px 30px;
+        padding: 0px 10px 0px 10px;
         text-align: center;
         width: 100%;
     }
     .left_column_words
     {
         margin: auto;
-        padding: 0px 30px 0px 30px;
+        padding: 0px 10px 0px 10px;
         text-align: center;
         width: 100%;
     }
-    .right_column_pic
+    .right_column_div
     {
         display: block;
-        float: none;
-        height: 200px;
+        float: none;       
         margin: auto;
         text-align: center;
         width: 100%;
-    }
-    .middle_column_words
-    {
-        padding: 10px 30px 30px 30px;
+    }    
+    .body_description{
+        max-width: 100%;
+        text-align: center;        
     }
 }
 @media screen and (max-height: 650px)
@@ -320,8 +354,8 @@ body
     {
         height: 650px;
     }
-    #name
+    .header_body
     {
-        padding-top: 75px;
+        top: 325px;
     }
 }
