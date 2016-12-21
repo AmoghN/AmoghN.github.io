@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+p{
+    margin: auto;
+}
 header,section,footer,aside,nav,article,hgroup
 {
     display: block;
@@ -184,6 +187,10 @@ body
     float: right;
 
 }
+.middle_column_div{
+    padding-top: 10px; 
+    text-align: center;
+}
 /* CAROUSEL */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img
@@ -195,6 +202,15 @@ body
 .img_frame
 {
     margin-bottom: 10px;
+}
+
+.project_img{
+    height: 140px;
+    width: 320px;     
+}
+
+.project_img:hover{
+    opacity: 0.5;
 }
 /* BODY TEXT STYLES */
 .body_heading
@@ -222,6 +238,7 @@ body
     padding: 10px;
 }
 .body_description{
+    text-align: left;
     max-width: 310px;
     font-size: 15;
     padding: 10px;
