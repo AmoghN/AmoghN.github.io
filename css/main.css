@@ -205,8 +205,8 @@ body
 }
 
 .project_img{
-    height: 140px;
-    width: 320px;     
+    position: relative;    
+    max-width: 100%;     
 }
 
 .project_img:hover{
